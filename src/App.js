@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <div className="App">NetFlix GPT</div>;
+  return <div className="text-3xl font-bold text-green-800">NetFlix GPT</div>;
 }
 
 export default App;
