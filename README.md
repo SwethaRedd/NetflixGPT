@@ -43,3 +43,9 @@ plugins: [],
 - Netflix GPT
   - Search Bar
   - Movie Suggestions
+
+## Coding Setups Step by Step
+
+- Create all the initial pages.
+- Setup Routing
+  npm install -D react-router-dom
