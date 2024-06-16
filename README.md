@@ -49,3 +49,4 @@ plugins: [],
 - Create all the initial pages.
 - Setup Routing
   npm install -D react-router-dom
+- add the router in the Body page and setup the router paths etc.
