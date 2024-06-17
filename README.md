@@ -53,4 +53,4 @@ plugins: [],
 - Header
 - Create Login component
 - Create Login Form
-- Create Sign Up Form
+- Create Sign Up Form (use few existing sing In form fields for the sign up form by adding some logic and add more fields to the signup form as well)
