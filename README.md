@@ -75,5 +75,41 @@ plugins: [],
   const ref= useRef(initialValue)
 
 - Form validations
+
   - Validate the form
   - If there is any error message, it has to show the error message.
+
+- Authentication
+  We need Backend for the Authentication.
+  We will be using firebase.
+
+go to the firebase account
+
+1. click on Add project
+
+2. Project Name:
+
+3. continue
+4. Slect an account as : Default Account for Firebase
+5. Click on Create a project
+   continue
+
+6. go to the project and click on web and register your web app there.
+
+- App nickname: NetflixGPT
+- if you want to host your app in firebase server, select this : Also set up Firebase Hosting fot the app.
+- And select register app
+- then you will be provided with some steps:  
+  Add Firebase SDK
+
+* use npm
+
+  - npm install firebase
+  - create a config file with firebase.js in the utils file and copy paste the config code from the firebase account (as instructed).
+
+  - Go to the NetflixGPT in the firebase and check for authentication to enable the authentication
+    **_ Note _**: you will get the authentication form the build option on the left side as well
+    - click on getstarted.
+    - go to the Sign-in Method (you can create multiple sign in options there)
+    - as per our project we are going with Email/password and select enable and save it. ( this will enable the users emailid and password )
+    - once the authentication is enabled, then you can register your users aswell. ( the users sign up from your app will be shown here in the firebase)
