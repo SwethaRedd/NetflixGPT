@@ -53,3 +53,4 @@ plugins: [],
 - Header
 - Create Login component
 - Create Login Form
+- Create Sign Up Form
