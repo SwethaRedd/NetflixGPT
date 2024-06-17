@@ -4,13 +4,20 @@ import { checkValidData } from "../utils/validate";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
+
   const [errorMessage, setErrorMessage] = useState(null);
+
+  const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
 
   const handleButtonClick = () => {
     // Validate the form data
-    const message = checkValidData(email.current.value, password.current.value);
+    const message = checkValidData(
+      name.current.value,
+      email.current.value,
+      password.current.value
+    );
     // console.log("message", message);
     setErrorMessage(message);
   };
@@ -39,9 +46,10 @@ const Login = () => {
         </h1>
         {!isSignInForm && (
           <input
+            ref={name}
             type="text"
             placeholder="Full Name"
-            className="p-2 my-4 w-full bg-gray-700 "
+            className="p-4 my-4 w-full bg-gray-700 "
           />
         )}
         <input
