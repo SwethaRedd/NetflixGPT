@@ -1,5 +1,17 @@
 # NetflixGPT
 
+- Create React App
+- Configured Tailwind CSS
+- Header
+- Routing of App
+- Login Form
+- Sign Up Form
+- Form Validations
+- useRef Hook
+-
+
+###### Step By Step process
+
 - Create React App - npx create-react-app netflix-gpt
 - Configured Tailwind CSS
 
@@ -54,3 +66,14 @@ plugins: [],
 - Create Login component
 - Create Login Form
 - Create Sign Up Form (use few existing sing In form fields for the sign up form by adding some logic and add more fields to the signup form as well)
+
+- \* Form Validations \*
+
+- if you have very huge form in your application, then use some libraries like( Formik, React Final Form etc)
+
+- useRef - Hook that lets you reference a value, that's not needed for rendering.
+  const ref= useRef(initialValue)
+
+- Form validations
+  - Validate the form
+  - If there is any error message, it has to show the error message.
