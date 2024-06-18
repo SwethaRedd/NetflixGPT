@@ -113,3 +113,34 @@ go to the firebase account
     - go to the Sign-in Method (you can create multiple sign in options there)
     - as per our project we are going with Email/password and select enable and save it. ( this will enable the users emailid and password )
     - once the authentication is enabled, then you can register your users aswell. ( the users sign up from your app will be shown here in the firebase)
+
+# - Deploying our app to the firebase.
+
+- `npm install -g firebase-tools`
+- `firebase login` (it will instruct you to login or take you out to the gmail login for the account)
+- once you're logged in then use
+  `firebase init` (to initialize firebase: it will create a firebase config for us )
+- it will give us some options to host or storage etc..
+- i am selecting `Hosting: Config files for Firebase Hosting and (Optionally) set up Github Action deploys`. (use space bar to confirm the option) and `select use an existing project` (as we already created a project earlier)
+- ? What do you want to use as your public directory? `build`
+- ? Configure as a single-page app (rewrite all urls to /index.html)? `No`
+- ? Set up automatic builds and deploys with GitHub? `No`
+
+And it will create my firebase config (firebase.json & .frebaserc)
+
+=========
+Build your project : `npm run build`
+
+# Deploy your app:
+
+`firebase deploy` : this command will deploy your app on firebase : which will create the deployed app live url:
+
+Live app:
+`NetflixGPT : https://netflixgpt-ad684.web.app `
+
+# Steps for Deployment
+
+1. install firebase CLI- `npm install -g firebase-tools`
+2. Firebase Login: `firebase login`
+3. Initialize Firebase- `firebase init`. then select Hosting
+4. Deploy Command- `firebase deploy`
