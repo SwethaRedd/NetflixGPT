@@ -169,7 +169,13 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 
 # Setup Redux Store
 
-install 2 libraries
+1. install 2 libraries
 
 - npm i -D @reduxjs/toolkit
 - npm i react-redux
+
+2. Configure appStore (redux store)
+
+- create appStore file with reducer
+- create userSliceReducer
+- import userSliceReducer in appStore
