@@ -184,3 +184,22 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 - create userSliceReducer
 - import userSliceReducer in appStore
 - provide the appStore to our app
+
+3. dispatch an action ; instead of dispatching an action in many places (ex; for sign In/ SignUp/singout/create a user/ or anything related to auth/ auth changes), lets create a utility, so that we can reuse it many places.
+
+   this API (onAuthStaeChanged) will be used for all the above conditions:
+   https://firebase.google.com/docs/auth/web/manage-users
+
+- we can write this api anywhere in the root file like app.js or body.js or anywhere we are comfortable using it.
+- so we're calling this api inside <Body/> component and we are using this api as event listener and also we want to call it only once.
+- so we are using useEffect with [], so that it will call only once.
+- the logic is written inside the body component:- onAuthStateChanged.
+- this onAuthStateChanged will take 2 arguments as suggested in the firebase documentation
+  auth and the user.
+  if the user is present, then the dispatch method will be called to dispatch/send all the mentioned/required data to the appStore.
+
+- if the user is signing out, then the empty dispatch() will be dispatched. so the store will be emptied.or the user data will be removed from it.
+
+- `so in this same file, we will be using useDispatch() hook from react-redux` to dispatch the data to the store.
+- `using the useNavigate() hook from "react-router-dom" to navigate the page to different routes based on the condition`
+- so
