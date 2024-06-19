@@ -159,4 +159,17 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 1. We're going to use the getAuth() in the utils firebase file , so that we can export that auth and reuse it in many places.
 2. in the firebase import the getAuth from firebase and export it.
 3. in the login page, where we are going to write out singup and singin logic.
-4. Create a User wuth email and password for the sign up , follow the documentation accordingly.
+4. Create a User with email and password for the sign up , follow the documentation accordingly.
+
+===============
+
+- Once the user signup/sign in , we will get the user object and we will have to keep the user object with us, so that we can use all this info anywhere in the app.
+- So we're going to keep this info in the redux store.
+- & we will navigate the user to the browse page.
+
+# Setup Redux Store
+
+install 2 libraries
+
+- npm i -D @reduxjs/toolkit
+- npm i react-redux
