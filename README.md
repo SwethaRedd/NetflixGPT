@@ -144,3 +144,19 @@ Live app:
 2. Firebase Login: `firebase login`
 3. Initialize Firebase- `firebase init`. then select Hosting
 4. Deploy Command- `firebase deploy`
+
+# Firebase authentication:
+
+- go to fire base docs
+  https://firebase.google.com/docs/auth
+
+- Go to the web
+
+https://firebase.google.com/docs/auth/web/password-auth
+
+https://firebase.google.com/docs/auth/web/email-link-auth
+
+1. We're going to use the getAuth() in the utils firebase file , so that we can export that auth and reuse it in many places.
+2. in the firebase import the getAuth from firebase and export it.
+3. in the login page, where we are going to write out singup and singin logic.
+4. Create a User wuth email and password for the sign up , follow the documentation accordingly.
