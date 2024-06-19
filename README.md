@@ -179,4 +179,4 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 - create appStore file with reducer
 - create userSliceReducer
 - import userSliceReducer in appStore
-- provide the app store to our app
+- provide the appStore to our app
