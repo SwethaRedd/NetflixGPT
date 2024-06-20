@@ -19,11 +19,9 @@ function App() {
   ]);
 
   return (
-    <RouterProvider router={appRouter}>
-      <Provider store={appStore}>
-        <Body />
-      </Provider>
-    </RouterProvider>
+    <Provider store={appStore}>
+      <Body />
+    </Provider>
   );
 }
 
