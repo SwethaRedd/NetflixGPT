@@ -8,6 +8,8 @@ import {
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
 // import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -19,6 +21,7 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleButtonClick = () => {
     // Validate the form data
@@ -50,6 +53,17 @@ const Login = () => {
             photoURL: "https://avatars.githubusercontent.com/u/12824231?v=4",
           })
             .then(() => {
+              // update our store
+              const { uid, email, displayName, photoURL } = auth.currentUser;
+              // we are dispatching/sending all the updated data to the store
+              dispatch(
+                addUser({
+                  uid: uid,
+                  email: email,
+                  displayName: displayName,
+                  photoURL: photoURL,
+                })
+              );
               // You can navigate the user to the browse page
               navigate("/browse");
             })
