@@ -12,14 +12,14 @@
 - Deploying our app to production
 - Create SignUp User Account
 - Implement Sign In User Api
-- Created Redux Store with userSlice
-- Implement Sign out
+- Created `Redux Store` with `userSlice`
+- Implement `Sign out` functionality
 - Update Profile API Call
-  BugFix: Sign up user displayName and profile picture update
-  BugFix: if the user is not logged in Redirect /browse to Login Page and vice-versa
--
+  `BugFix`: Sign up user displayName and profile picture update
+  `BugFix`: if the user is not logged in Redirect /browse to Login Page and vice-versa
+- `Unsubscribe` to the `onAuthStateChanged` callback
 
-###### Step By Step process
+###### Step By Step process Tailwind CSS
 
 - Create React App - npx create-react-app netflix-gpt
 - Configured Tailwind CSS
@@ -113,15 +113,15 @@ go to the firebase account
 
 * use npm
 
-  - npm install firebase
-  - create a config file with firebase.js in the utils file and copy paste the config code from the firebase account (as instructed).
+  - `npm install firebase`
+  - create a config file with `firebase.js `in the utils file and copy paste the config code from the firebase account (as instructed).
 
-  - Go to the NetflixGPT in the firebase and check for authentication to enable the authentication
-    **_ Note _**: you will get the authentication form the build option on the left side as well
-    - click on getstarted.
-    - go to the Sign-in Method (you can create multiple sign in options there)
-    - as per our project we are going with Email/password and select enable and save it. ( this will enable the users emailid and password )
-    - once the authentication is enabled, then you can register your users aswell. ( the users sign up from your app will be shown here in the firebase)
+  - Go to the NetflixGPT in the `firebase` and check for authentication to enable the authentication
+    **_ Note _**: you will get the `authentication`from the `build` option on the left side as well
+    - click on `getstarted`.
+    - go to the `Sign-in` Method (you can create multiple sign in options there)
+    - as per our project we are going with `Email/password` and select `enable` and `save` it. ( this will enable the users emailid and password )
+    - once the authentication is enabled, then you can `register` your users aswell. ( the users sign up from your app will be shown here in the firebase)
 
 # - Deploying our app to the firebase.
 
@@ -207,4 +207,13 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 
 - `so in this same file, we will be using useDispatch() hook from react-redux` to dispatch the data to the store.
 - `using the useNavigate() hook from "react-router-dom" to navigate the page to different routes based on the condition`
-- so
+
+#### BugFix: `if the user is not logged in Redirect /browse to Login Page and vice-versa`
+
+1. If the user is logged in, redirwct the user to the browse page
+2. If the user is not logged in and trying to access /browse or any loggedin user accessable url's, then redirect the user to the login page
+
+# Checking Auth on the other pages?
+
+- Moving the auth logic to the Header component from the Body, as the header will be presented in all the pages,so would be a better idea to use it in the header component.
+  & also RouterProvider logic is in the body component, which means, we can not navigate the user to necessary routes as the body provides the router to it's children, and the routing logic doesn't work with in the body component.
