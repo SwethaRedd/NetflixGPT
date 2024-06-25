@@ -17,7 +17,7 @@
 - Update Profile API Call
 - `BugFix`: Sign up user displayName and profile picture update
 - `BugFix`: if the user is not logged in Redirect /browse to Login Page and vice-versa
-- `Unsubscribe` to the `onAuthStateChanged` callback
+- `Unsubscribe` to the `onAuthStateChanged` callback.
 
 ###### Step By Step process Tailwind CSS
 
