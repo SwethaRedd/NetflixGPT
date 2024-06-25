@@ -18,6 +18,7 @@
 - `BugFix`: Sign up user displayName and profile picture update
 - `BugFix`: if the user is not logged in Redirect /browse to Login Page and vice-versa
 - `Unsubscribe` to the `onAuthStateChanged` callback.
+- Add Hardcoded values to the constants files.
 
 ###### Step By Step process Tailwind CSS
 
