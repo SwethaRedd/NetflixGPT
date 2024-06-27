@@ -239,4 +239,6 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 - Create moviesSlice, & import it in the appStore.
 - dispatch the movies response to the redux store.
 
+# Custom Hook
+
 - Create custom hook and cleanup the code.
