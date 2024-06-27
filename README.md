@@ -19,6 +19,9 @@
 - `BugFix`: if the user is not logged in Redirect /browse to Login Page and vice-versa
 - `Unsubscribe` to the `onAuthStateChanged` callback.
 - Add Hardcoded values to the constants files.
+- Register for TMDB API & create an app & get access token
+- Get data from TMDB now playing movies list API
+-
 
 ###### Step By Step process Tailwind CSS
 
@@ -218,3 +221,20 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 
 - Moving the auth logic to the Header component from the Body, as the header will be presented in all the pages,so would be a better idea to use it in the header component.
   & also RouterProvider logic is in the body component, which means, we can not navigate the user to necessary routes as the body provides the router to it's children, and the routing logic doesn't work with in the body component.
+- Move all the hardcoded values to the constants file.
+
+# TMDB - API
+
+- create an account in the TMDB
+- search for the API (https://www.themoviedb.org/settings/api?language=en-US)
+- API Key & API Read Access Token
+  (https://developer.themoviedb.org/docs/getting-started)
+- goto API reference - (https://developer.themoviedb.org/reference/intro/getting-started)
+- Follow the steps as suggested in the docs to access the API.
+
+# Fetch API
+
+- fetch movies API
+- Store the movies info in the redux store
+- Create moviesSlice, & import it in the appStore.
+- dispatch the movies response to the redux store.
