@@ -244,3 +244,13 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 - Create custom hook and cleanup the code.
 
 # QR Code : Not related to this porject - just adding a client side feature using the qrcode.react package.
+
+# Browse Movies Plan:
+
+1. MainContainer (most trending/new movie/recommended movie)
+   - VideoBackground
+   - VideoTitle
+2. SecondaryContainer
+   - Movies list \* n
+     - Movie Cards \* n
+3.
