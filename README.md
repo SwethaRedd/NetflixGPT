@@ -242,3 +242,5 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 # Custom Hook
 
 - Create custom hook and cleanup the code.
+
+# QR Code : Not related to this porject - just adding a client side feature using the qrcode.react package.
