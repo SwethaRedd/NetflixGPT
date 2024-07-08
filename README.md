@@ -254,3 +254,14 @@ https://firebase.google.com/docs/auth/web/email-link-auth
    - Movies list \* n
      - Movie Cards \* n
 3.
+
+# Work on the Video background Trailer
+
+1. fetch the api
+2. use the iframe to show the video
+3. pass the key to the video dynamically.
+4. pass the movie id to the video api dynamically.
+5. create an action to store the trailer details and dispatch an action.
+6. create custom hook to keep the fetching related code inside the hook and reuse this hook multiple times in multiple components.
+7. Update the styles to show the trailer video in the back ground and the title and the description and buttons float on top of this background video.
+8. add auto play and auto mute options
