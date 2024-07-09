@@ -29,6 +29,11 @@
 - Update store with trailer video data
 - Embedded the Youtube video and make it auto play & mute
 - Tailwind classes to make MainContainer look awesome.
+- Build Secondary Component
+- Build Movie Card
+- TMDB image CDN URL
+- Made the Browse page amazing with Tailwind Css
+- usePopularMovies Custom hook
 
 ###### Step By Step process Tailwind CSS
 
@@ -272,3 +277,26 @@ https://firebase.google.com/docs/auth/web/email-link-auth
 6. create custom hook to keep the fetching related code inside the hook and reuse this hook multiple times in multiple components.
 7. Update the styles to show the trailer video in the back ground and the title and the description and buttons float on top of this background video.
 8. add auto play and auto mute options
+
+# Movie List Suggestions
+
+{/\*
+MovieList - Popular
+MovieCard \* n
+
+- title
+- movie Video
+
+  MovieList - Trending
+  MovieList - Now Playing Movies
+  MovieList - Popular
+  MovieList - Top Rated
+  MovieList - Upcoming
+
+\*/}
+
+1. Built Secondary Component with Movie List- this movie List with multiple MovieCards.
+2. Fetch the popular movie list api.
+3. created usePopularMovies hook.
+4. Upgraded the styles
+5. Used the TMDB Image CDN URL
