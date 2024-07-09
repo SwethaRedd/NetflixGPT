@@ -300,6 +300,9 @@ MovieCard \* n
 3. created usePopularMovies hook.
 4. Upgraded the styles
 5. Used the TMDB Image CDN URL
-6. Fetch the Top Rated API (https://developer.themoviedb.org/reference/movie-top-rated-list)
+6. Fetch the Top Rated Movies List API (https://developer.themoviedb.org/reference/movie-top-rated-list)
 7. Create useTopRatedMovies custom hook
 8. show the top rated movies list in the Secondary Container.
+9. Fetch the Upcoming MoviesList API (https://developer.themoviedb.org/reference/movie-upcoming-list)
+10. Create useUpComingMovies custom hook
+11. show the top Upcoming movies list in the Secondary Container.
