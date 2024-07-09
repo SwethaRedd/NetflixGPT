@@ -296,7 +296,10 @@ MovieCard \* n
 \*/}
 
 1. Built Secondary Component with Movie List- this movie List with multiple MovieCards.
-2. Fetch the popular movie list api.
+2. Fetch the popular movie list api. (https://developer.themoviedb.org/reference/movie-popular-list)
 3. created usePopularMovies hook.
 4. Upgraded the styles
 5. Used the TMDB Image CDN URL
+6. Fetch the Top Rated API (https://developer.themoviedb.org/reference/movie-top-rated-list)
+7. Create useTopRatedMovies custom hook
+8. show the top rated movies list in the Secondary Container.
