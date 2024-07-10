@@ -5,11 +5,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO } from "../utils/constants";
+import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((store) => store.user);
+
+  const handleGptSearchClick = () => {
+    // Toggle Gpt Search
+    dispatch(toggleGptSearchView());
+  };
 
   const handleSignOut = () => {
     // signOut api : https://firebase.google.com/docs/auth/web/password-auth
@@ -59,7 +65,10 @@ const Header = () => {
       <img className="w-44" src={LOGO} alt="Netflix Logo" />
       {user && (
         <div className="flex p-2">
-          <button className="py-2 px-4 mx-4 my-2 bg-purple-700 text-white rounded-lg">
+          <button
+            onClick={handleGptSearchClick}
+            className="py-2 px-4 mx-4 my-2 bg-purple-700 text-white rounded-lg"
+          >
             GPT Search
           </button>
           <img className="w-12 h-12" src={user?.photoURL} alt="user-icon" />
