@@ -59,6 +59,9 @@ const Header = () => {
       <img className="w-44" src={LOGO} alt="Netflix Logo" />
       {user && (
         <div className="flex p-2">
+          <button className="py-2 px-4 mx-4 my-2 bg-purple-700 text-white rounded-lg">
+            GPT Search
+          </button>
           <img className="w-12 h-12" src={user?.photoURL} alt="user-icon" />
           <button className="font-bold text-white" onClick={handleSignOut}>
             (Sign Out)
