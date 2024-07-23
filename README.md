@@ -36,6 +36,7 @@
 - create & use usePopularMovies Custom hook
 - create & use useTopRatedMovies Custom Hook
 - create & use useUpComingMovies Custom Hook
+- GPT Search Feature: Build movie recommendation system using Chat GPT
 
 ###### Step By Step process Tailwind CSS
 
@@ -308,3 +309,24 @@ MovieCard \* n
 9. Fetch the Upcoming MoviesList API (https://developer.themoviedb.org/reference/movie-upcoming-list)
 10. Create useUpComingMovies custom hook
 11. show the top Upcoming movies list in the Secondary Container.
+
+# Chat GPT Search
+
+- Build movie recommendation system using Chat GPT
+
+1. add chat gpt button in the header & add styles.
+2. Create GPT Search component and add it in the Browse component.
+3. add a logic/ toggle condition to show & hide when the Gpt search button is clicked.
+
+- Plug & play
+- Integrate Chat GPT
+
+Language Translations:
+
+- Language constants
+- add mutiple lang constants in the langconstants file
+
+- Language change options selection.
+- Store the language info in the redux store
+  - create configSlice and add the slice in the appStore, and dispatch the lang from the header component and dynamically use the languages
+- based on the selected language, tranlsate the page.
