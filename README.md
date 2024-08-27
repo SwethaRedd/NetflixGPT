@@ -30,6 +30,7 @@
 - Embedded the Youtube video and make it auto play & mute
 - Tailwind classes to make MainContainer look awesome.
 - Build Secondary Component
+- Build Movie List
 - Build Movie Card
 - TMDB image CDN URL
 - Made the Browse page amazing with Tailwind Css
@@ -37,6 +38,9 @@
 - create & use useTopRatedMovies Custom Hook
 - create & use useUpComingMovies Custom Hook
 - GPT Search Feature: Build movie recommendation system using Chat GPT
+- GPT Search Page
+- GPT Search Bar
+- (\* FEATURE- BONUS) Multi- language feature in our app
 
 ###### Step By Step process Tailwind CSS
 
